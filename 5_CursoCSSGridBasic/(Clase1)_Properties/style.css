@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/*Dato de la profesora: 'grid-tamplate-column' lo que me permite es decirle a la grilla cuantas columnas va a tener y de que ancho sera cada columna y 'grid-tamplate-rows es cuantas filas va a tener y su ancho*/
+
+/*grid-auto-rows y grid-auto-column lo que se hace con estas propiedades es definir el tamaño que tendra cualquier fila o columna que se cree*/
+
+/*grid-auto-flow lo que hace es que modifica como se llena la grilla
+
+por defecto esta en 'row' porque cuando los elementos no caben en lo que hemos definido lo que hace es crear filas nuevas
+'dense' lo que hace es que si encuentra un hueco dentro de la grilla va a poner elementos en vez de seguir poniendolos en filas o columnas
+'colums' los pone en posicion de columnas en vez de filas*/
+
+/*'gap' es el espaciado entre los diferentes elementos 'row-gap' es el espaciado de las filas y 'column-gap' es el espaciado entre las columnas*/
+
+.container{
+    display: grid;
+    grid-template-rows: 100px 200px; 
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    row-gap: 15px;
+    column-gap: 30px;
+}
+
+.item{
+    border: 5px solid #00bcd4;
+    font-size: 4rem;
+}

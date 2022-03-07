@@ -1,0 +1,54 @@
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.circle-1 {
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #9d3939, #af5322, #b07500, #9f9900, #74bc02);
+}
+
+.circle-2 {
+    border-radius: 50%;
+    background-color: red ;
+}
+
+.circle-3 {
+    background-color: blue ;
+}
+
+
+/*Transform: scale lo que hace es que el elemento sea mas grande o mas pequeño dependiendo del valor dado. Por defecto el tamaño es 1 por lo que con scale con cualquier valor entre 1 y 0 lo hara mas pequeño y con numeros mayores a 1 se hara mas grande
+
+transform: scale(n) Si solo se le pone un numero afectara ambos ejes
+transform: scale(n, n) reprensenta al eje x and y*/
+
+.circle:hover {
+    transform: scale(2);
+}
+
+/*Transform: skew lo que hace es que estira el contenido y se usa deg (grados) como dato
+
+transform: skewX para el eje x skewY para el eje Y y skew para ambos*/
+
+.circle-2:hover {
+    transform: skew(30deg);
+}
+
+/*Transform: rotate rota el elemento dependiendo del deg dado*/
+
+.circle-3:hover {
+    transform: rotate(30deg)
+}

@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column ;
+    background-color: papayawhip;
+}
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    font-size: 40px;
+}
+
+.box1 {
+    background: red;    
+}
+
+.box2 {
+    background: blue;
+    
+}
+
+.box3 {
+    background: purple;
+}
+
+.box4 {
+    background: green;
+}
+
+/*Basicamente lo que hago es darle tiempo a las transiciones lo cual se hace aplicando un estilo y darle una transcision a ese estilo
+
+Estilo: parametros;
+transition: Estilo tiempo*/
+
+.box1:hover {
+    transform: scale(1.5);
+    transition: transform 1s;
+}
+
+.box2:hover {
+    transform: skew(20deg);
+    transition: transform 1s;
+}
+
+.box3:hover {
+    transform: rotate(180deg);
+    transition: transform 1s;
+}
+
+.box4:hover {
+    transform-origin: top right;
+    transform: rotate(360deg);
+    transition: transform 2s;
+}

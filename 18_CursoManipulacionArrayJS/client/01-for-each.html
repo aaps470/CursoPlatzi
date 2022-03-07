@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app2">
+        <h1>Ejemplo de clase</h1>
+    </div>
+    <div id="app">
+        <h2>Tarea</h2>
+    </div>
+    <script>
+        
+        //Ejemplo de clase:
+        
+        const app2 = document.getElementById('app2');
+
+        const dinner = [
+            {food: 'Hamburguer', price: 120},
+            {food: 'Pizza', price: 70},
+        ];
+
+        dinner.forEach(product => {
+            app2.innerHTML += `<li>${product.food} - ${product.price}</li>`
+        })
+
+
+        
+        //Tarea para realizar:
+
+        const app = document.getElementById('app');
+
+        const tasks = [
+            { title: 'make dinner', done: false },
+            { title: 'sweep the floor', done: true },
+            { title: 'feed the kittens', done: true },
+            { title: 'buy groceries', done: false },
+            { title: 'take a bath', done: true },
+        ];
+
+        tasks.forEach(({ title, done }) => {
+            const element = `
+                <li>
+          	        <input 
+                        type='checkbox' 
+                        ${done && 'checked'} />
+                    <label for='${title}' >${title} </label>   
+                </li>`;
+        app.insertAdjacentHTML('beforeend', element);});
+    </script>
+
+    <style>
+        #app {
+            margin-top: 20px;
+        }
+        li {
+            list-style: none;
+        }
+    </style>
+</body>
+</html>

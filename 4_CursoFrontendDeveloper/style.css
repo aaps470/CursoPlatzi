@@ -1,0 +1,145 @@
+:root{
+    --VeryLightPink: #c7c7c7;
+    --HospitalGreen: #acd9b2;
+    --White: #ffffff;
+    --TextInputField: #f7f7f7;
+    --Black: #000000;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+.form-container{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container .logo{
+    width: 150px;
+    margin-bottom: 48px;
+    justify-self: center;
+    
+}
+
+.login-title{
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.login-subtitle{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--VeryLightPink);
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+.login-label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.login-input-password{
+    border: none;
+    background-color: var(--TextInputField);
+    border-radius: 8px;
+    height: 30px;
+    font-size: 1.4rem;
+    padding: 6px;
+    margin-bottom: 12px;
+}
+
+.primary-buttom{
+    background-color: var(--HospitalGreen);
+    border-radius: 8px;
+    border: none;
+    color: var(--White);
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+/*Estilos de la segunda parte, parte de Email enviado*/
+.email-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--TextInputField);
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+}
+
+.login-buttom{
+    background-color: var(--HospitalGreen);
+    border-radius: 8px;
+    border: none;
+    color: var(--White);
+    width: 250px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.finaltexts span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--VeryLightPink);
+}
+
+.finaltexts a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+    color: var(--HospitalGreen);
+}
+
+/*Estilos de la tercera parte, parte del login*/
+
+.forgot{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--HospitalGreen);
+}
+
+.sign-buttom{
+    background-color: var(--White);
+    border-radius: 8px;
+    border: 1px solid var(--HospitalGreen);
+    color: var(--HospitalGreen);
+    width: 250px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}

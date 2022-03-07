@@ -1,0 +1,92 @@
+/*Propieades de ubicación (para las columnas)(columns)
+
+Grid-column-start
+Grid-column-end
+
+simplifica las de start y end
+Grid-column
+
+Propieades de ubicación (para las filas (rows))
+
+Grid-row-start
+Grid-row-end
+Simplifica las de start y end
+Grid-row
+
+Definimos las 4 ubicaciones donde comienza y terminan las filas y columnas
+
+Inicia en la row 2 y column 2 | termina en la 4 y 4
+
+Grid-area: 2 / 2 / 4 / 4;*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
+    border: 5px solid #e1bee7;
+    background-color: white;
+}
+
+.item{
+    font-size: 4rem;
+}
+
+.item-1{
+    border: 5px solid #f8bbd0;
+    background-color: #ffeeff;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item-2{
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    grid-row: 2 / 4;
+}
+
+.item-3{
+    border: 5px solid #b2ebf2;
+    background-color: #e5ffff;
+    grid-area: 2 / 2 / 4 / 4;
+}
+
+
+/*Otra forma que la profesora aplico es con:
+
+grid-template-area (que cuando ya definimos el tamaño con grid-template-column y grid-template-rows) este posiciona los items dentro de la grilla por ejemplo:
+
+grid-template-column: 150px 150px 150px (Defino 3 columnas de 150 px c/u)
+grid-template-rows: 150px 150 px 150px (Defino 3 filas de 150px c/u)
+
+grid-template-area: 'header header header'
+                    'side main main'
+                    'side main main'
+                    
+Con esto defini el 3x3 y donde estan sus ubicaciones
+
+entonces en los contenidos de la grilla le pongo por ejemplo:
+
+item-1{
+    grid-area: header;
+}
+
+item-2{
+    grid-area: side;
+}
+
+item-3{
+    grid-area: main;
+}
+
+y ya con esto los item tomaran su lugar en el 3x3 que se definio con los templates*/

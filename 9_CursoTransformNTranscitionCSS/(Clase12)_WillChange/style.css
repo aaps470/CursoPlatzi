@@ -1,0 +1,29 @@
+button {
+    width: 100px;
+    height: 30px;
+    background: red;
+}
+
+
+/*will-change
+Propiedad css para anticipar y preparar los cambios
+Este tipo de optimizaciones puede aumentar la capacidad de respuesta de una página al realizar un trabajo potencialmente costoso antes de que realmente se requieran.
+*/
+
+.better {
+    will-change: transform;
+    transition: transform 500ms;
+}
+
+.better:hover {
+    transform: translateY(10px);
+}
+
+.worse {
+    will-change: margin-top;
+    transition: margin-top 500ms;
+}
+
+.worse:hover {
+    margin-top: 5px;
+}

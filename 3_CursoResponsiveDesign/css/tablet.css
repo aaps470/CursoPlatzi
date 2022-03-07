@@ -1,0 +1,18 @@
+/*Esto ya es el responsive design, en la pagina de html hay un link que tiene un mid-width que hara que pase del mobile a un tamano mas grande*/
+
+.main-tables-container{
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+}
+
+.product-cards--container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+}
+
+.plans-container--slider{
+    justify-content: center;
+}

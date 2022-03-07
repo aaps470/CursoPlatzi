@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 350px;
+    padding: 20px;
+    border: 10px solid rgba(92, 72, 15, 0.705);
+    background-image: url('https://motionarray.imgix.net/preview-230839-7ZUTPS7d40-high_0005.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-image: radial-gradient(circle, #edeee2, #e1e4b8, #d4d98d, #c8ce61, #bcc22a);*/
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: white;
+}
+
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 350px;
+    padding: 20px;
+    border: 10px solid rgba(10, 12, 104, 0.705);
+    background-image: url('https://st2.depositphotos.com/2899123/7419/v/600/depositphotos_74199561-stock-illustration-water-bubbles-pattern-on-blue.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-image: radial-gradient(circle, #edeee2, #e1e4b8, #d4d98d, #c8ce61, #bcc22a);*/
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: black;
+}
+
+.card-3 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 350px;
+    padding: 20px;
+    border: 10px solid rgba(15, 115, 155, 0.705);
+    background-image: url('https://st2.depositphotos.com/3809847/5500/i/950/depositphotos_55003383-stock-photo-aquamarine-3d-abstract-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-image: radial-gradient(circle, #edeee2, #e1e4b8, #d4d98d, #c8ce61, #bcc22a);*/
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: black;
+}
+
+
+.img {
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hp {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hp img{
+    margin-left: 3px;
+    width: 35px;
+    height: 35px;
+}
+.elements img{
+    height: 20px;
+    width: 20px;
+}
+
+.superior-part {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 2px solid black;
+}
+
+.power {
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+    border-top: 2px solid black;
+    padding-top: 5px;
+}

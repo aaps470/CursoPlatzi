@@ -1,0 +1,33 @@
+
+    .menu-navegacion {
+        width: 65vw;
+    }
+
+    .hamburger {
+        top: 20px;
+        right: 20px;
+    }
+
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .subtitulo {
+        font-size: 3rem;
+    }
+
+    .agregar-imagen{
+        width: 95%;
+    }
+
+    .img-galeria {
+        width: 95%;
+    }
+
+    .social-media {
+        width: 100%;
+    }
+
+    .contact-us {
+        width: 90%;
+    }

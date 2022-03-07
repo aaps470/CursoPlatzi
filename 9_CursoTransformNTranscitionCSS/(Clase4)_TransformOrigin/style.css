@@ -1,0 +1,24 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Con Origin lo que hago es ponerle desde que punto quiero hacer la rotacion, por defecto esta en el centro del contenedor pero con origin puedo decirle si lo quiero en alguna esquina, OJO siempre tengo que poner transform origin en el css del contenedor
+
+transform-origin: lado lado
+Ej
+transform-origin: bottom left*/
+
+.algo {
+    width: 150px;
+    height: 100px;
+    background: red;
+    transform-origin: right top;
+}
+
+.algo:hover {
+    transform: rotate(20deg);
+}

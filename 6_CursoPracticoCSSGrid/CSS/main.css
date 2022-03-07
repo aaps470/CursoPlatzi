@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*.home-body{
+   position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}*/
+
+.grid-container{
+    max-width: 980px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+header .header-icons-container{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #47cfac;
+}
+
+header .header-icons-container .icons{
+    width: 300px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    justify-self: end;
+    margin-right: 20px;
+}
+
+header .icons img{
+    width: 30px;
+    height: 30px;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+
+nav .nav-logo-container{
+    margin-left: 20px;
+}
+
+nav .nav-logo-container img{
+    width: 220px;
+    margin-top: 10px;
+}
+
+nav .profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+nav .profile-link a{
+    color: black;
+    border-bottom: 1px solid;
+    font-size: 2rem;
+}
+
+.main-principal{
+    height: 100vh;
+    background-image:url('/CursoPracticoCSSGrid/Assets/imgs/Cover.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+main .main-container h2{
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 100px;
+    text-align: center;
+}
+
+main .main-container button{
+    margin-top: 100px;
+    padding: 20px 70px;
+    background-color: #47cfac;
+    border-radius: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+}
+
+main .main-container a{
+    color: white;
+    
+}
+
+.blog-main{
+    display: grid;
+}
+.blogs-news-container {
+   background-color: #e6e9ed;
+   padding: 0 50px 40px;
+}
+
+.blogs-main-new {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+.blogs-main-new h3{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.blogs-news-img-container{
+    grid-column: 1;
+}
+
+.blogs-news-img-container img {
+    width: 85%;
+}
+
+.blogs-news-info-container {
+    grid-column: 2;
+}
+
+.blogs-news-info-container h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blogs-news-info-container p {
+    font-size: 1.6rem;
+    margin-bottom: 35px;
+}
+
+.blogs-posts-container {
+    padding: 0 50px 40px;
+}
+
+.blogs-posts-container .blogs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.blogs-posts-container h3{
+    border-bottom: 1px solid #cdd2da;
+    padding: 20px 0 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.blogs-button {
+    border: 1px solid #47cfac;
+    padding: 10px 15px;
+    font-size: 1.4rem;
+}
+
+.blogs-posts-container .post-container {
+    margin-bottom: 50px;
+}
+
+.blogs-posts-container .post-container h4 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.blogs-posts-container .post-container p{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.blogs-posts-container .post-container img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #22272b;
+    border-top: 35px solid #47cfac;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+    margin-top: 15px;
+}
+
+.blogpost-img-container{
+    padding: 0 50px 40px;
+}
+
+.blogpost-img-container img {
+    width: 100%;
+}
+
+.blogpost-main-container {
+    padding: 0 50px 40px;
+}
+
+.blogpost-main-container h3 {
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.blogpost-main-container article h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.blogpost-main-container article p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contact-main-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    background-color: #cdd2da;
+    padding: 50px 50px;
+    justify-items: center;
+}
+
+.contact-main-container .contact-mail {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+}
+
+.contact-main-container .contact-mail img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.contact-main-container .contact-mail a {
+    border-bottom: 1px solid black;
+    font-size: 1.6rem;
+}
+
+.contact-main-container .contact-mail p {
+    margin-top: 5px;
+    font-size: 1.2rem;
+} 
+
+.contact-main-container .contact-heart {
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+}
+
+.contact-main-container .contact-heart img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.contact-main-container .contact-heart a {
+    border-bottom: 1px solid black;
+    font-size: 1.6rem;
+}
+
+.contact-main-container .contact-heart p {
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+.profile-container {
+    width: 100%;
+    background-color: #cdd2da;
+    padding: 50px 40px;
+}
+
+.profile-main-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 30px;
+}
+
+.profile-img-container img {
+    width: 100%;
+}
+
+.profile-info-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.profile-info-container p{
+    font-size: 1.6rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    align-items: center;
+}
+
+.project-title {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.projects-posts-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    border-top: 1px solid #cdd2da;
+    padding: 30px 0 30px 0;
+    justify-content: center;
+}
+
+.projects-posts-container article {
+    border: 1px solid #cdd2da;
+    padding: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.projects-posts-container h3{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.projects-posts-container p {
+    font-size: 1.6rem;
+}

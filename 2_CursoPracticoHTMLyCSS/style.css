@@ -1,0 +1,182 @@
+body{
+    
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*TODA ESTA PINCHE MIERDA ES EL HEADER*/
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    list-style: none;
+    height: auto;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a{
+    margin-right: 10px;
+    color: #000;
+}
+
+nav .nav-right-section .menu-icon{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAGFBMVEX///8AAADLy8szMzOrq6tTU1MvLy/Pz8/nLtaiAAAAqUlEQVR4nO3XOQqAUBBEQXfvf2MPIDTCh1HGqriTF/Y0AQAAAAAAAMB3LFHZeNwclY2FCBEiRIgQIUKECBEiRIgQIUKECBEiRIiQuzUqGwMAAM9tUdl4XJtjJUSIECFChAgRIkSIECFChAgRIkSIECFC+oXsUdkYAAD4oSMqG49r8xCFCBEiRIgQIUKECBEiRIgQIUKECBEiREi/kDMqGwMAAAAAAADAmy5qfCgVTPRJhwAAAABJRU5ErkJggg==');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+nav .nav-right-section img{
+    border-radius: 50%;
+    margin-left: 10px;
+
+}
+
+/*TODA ESTA PINCHE MIERDA ES EL MAIN*/
+
+main{
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img{
+    width: 300px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+/*EL :HOVER QUE ESTA AL PRINCIPIO ES EL ESTILO QUE CUANDO PONES EL CURSOR ENCIMA DE ALGO
+ESTE SE SOMBREA*/
+
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #202122;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon{
+    background-image: url('https://e7.pngegg.com/pngimages/886/318/png-clipart-computer-icons-edison-state-community-college-google-search-symbol-magnifying-glass-material-logo-google-logo-thumbnail.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input .micro-icon{
+    background-image: url('data:image/png;base64,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');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+    
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px black;
+    color: black;
+
+}
+
+/*TODA ESTA PINCHE MIERDA ES EL FOOTER*/
+
+/*El grid sirve para poner todos en fracciones para poder dividir las cuadriculass*/
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+
+}
+
+footer .footer-left{
+    justify-content: left;
+}
+
+footer .footer-right{
+    justify-content: right;
+}
+
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+}

@@ -1,0 +1,50 @@
+
+/*Existen pseudo-clases y pseudo-elementos que se usan para hacer mini animaciones que son visibles para el usuario
+
+Pseudo-clases:
+
+link: pinta el color de la etiqueta ancla
+visited: pinta del color que se le asigne despues de haberse presionado
+hover: es lo que pasa cuando pones el puntero encima del elemento
+not(): hace que cualquier cosa que no este dentro de la clase aplique el css
+nth-child(1): hace que el primer hijo se le aplique el css*/
+
+.pseudo-clases {
+    margin-bottom: 50px;
+}
+
+.pseudo-clases a:link {
+    color: pink;
+}
+
+.pseudo-clases a:visited {
+    color: tomato;
+}
+
+.pseudo-clases a:hover {
+    background-color: yellow;
+}
+
+.pseudo-clases p:not(.maravillas) {
+    color: red;
+}
+
+.pseudo-clases .container div:nth-child(1) {
+    color: blue;
+}
+
+
+/*Pseudo-elementos:
+
+before: Pone los estilos antes del elemento que llamemos
+after: pone los estilos despues del elemento que llamemos*/
+
+.pseudo-elementos div::before {
+    margin-right: 10px;
+    content: ":D";
+}
+
+.pseudo-elementos div::after {
+    margin-left: 10px;
+    content: "<3";
+}

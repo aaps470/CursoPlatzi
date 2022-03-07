@@ -1,0 +1,432 @@
+/*Counter CSS
+
+counter-reset: Crea o reinicia un contador.
+counter-increment: Incrementa un valor del contador.
+content: Inserta el contenido generado (debe usarse con un pseudoelemento).
+counter(): Función que agrega el valor de un contador a un elemento.*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    counter-reset: game;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+input:checked {
+    counter-increment: game;
+}
+
+.total-count::after {
+    content: counter(game);
+}
+
+/*Segunda parte: Apilamiento*/
+
+.phone {
+    position: relative;
+    height: 600px;
+    width: 300px;
+    border: 8px solid black;
+    border-radius: 40px;
+    background: #ccefff;
+    box-shadow: 0 19px 38px rgb(0, 0, 0, 0.3), 0 15px 12px rgb(0, 0, 0, 0.22);
+    overflow-x: hidden;
+}
+
+.layer-1 {
+    position: absolute;
+    z-index: 1;
+    height: 450px;
+    width: 80px;
+    bottom: 0;
+    right: 60px;
+
+    animation-name: layer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes layer {
+    0% {
+        bottom: 0;
+    }
+
+    25% {
+        bottom: -80px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+
+}
+
+.layer-2 {
+    position: absolute;
+    z-index: 2;
+    height: 450px;
+    width: 80px;
+    bottom: 0;
+    left: 60px;
+
+    animation-name: layer2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes layer2 {
+    0% {
+        bottom: 0;
+    }
+
+    25% {
+        bottom: -50px
+    }
+
+    50% {
+        bottom: 0;
+    }
+
+    75% {
+        bottom: -30px
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+.layer-3 {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 220px;
+    height: 400px;
+    background: brown;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 19px 38px rgb(0, 0, 0, 0.3), 0 15px 12px rgb(0, 0, 0, 0.22);
+}
+
+
+.layer-4 {
+    position: absolute;
+    z-index: 4;
+    height: 350px;
+    width: 80px;
+    bottom: 0;
+    left: 20px;
+
+    animation-name: layer4;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes layer4 {
+    0% {
+        bottom: 0;
+    }
+
+    25% {
+        bottom: 20px
+    }
+
+    50% {
+        bottom: 0;
+    }
+
+    75% {
+        bottom: -30px
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+.layer-5 {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    margin: 0 auto;
+    width: 200px;
+    height: 300px;
+    background: brown;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 19px 38px rgb(0, 0, 0, 0.3), 0 15px 12px rgb(0, 0, 0, 0.22);
+}
+
+.layer-6 {
+    position: absolute;
+    z-index: 6;
+    height: 250px;
+    width: 80px;
+    bottom: 0%;
+    right: 30px;
+
+    animation-name: layer6;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes layer6 {
+    0% {
+        bottom: 0;
+    }
+
+    25% {
+        bottom: -100px
+    }
+
+    50% {
+        bottom: 0;
+    }
+
+    75% {
+        bottom: -30px
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+
+.layer-7 {
+    position: absolute;
+    z-index: 7;
+    right: 0;
+    margin: 0 auto;
+    width: 160px;
+    height: 200px;
+    background: brown;
+    bottom: 0;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 19px 38px rgb(0, 0, 0, 0.3), 0 15px 12px rgb(0, 0, 0, 0.22);
+}
+
+.layer-8 {
+    position: absolute;
+    z-index: 8;
+    margin: 0 auto;
+    width: 180px;
+    height: 140px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.layer-9 {
+    position: absolute;
+    z-index: 9;
+    width: 100px;
+    height: 120px;
+    bottom: 0;
+    left: 0;
+}
+
+.layer-10 {
+    position: absolute;
+    z-index: 10;
+    width: 100px;
+    height: 120px;
+    bottom: 0;
+    right: 0;
+}
+
+/*Tercerta Parte Creacion de los dibujos de conejos*/
+
+.left-ear--outer {
+    position: absolute;
+    background: white;
+    border-radius: 90%;
+    width: 20px;
+    height: 50px;
+    left: 10px; 
+}
+
+.left-ear--inner {
+    position: absolute;
+    background: pink;
+    border-radius: 90%;
+    width: 10px;
+    height: 50px;
+    left: 15px; 
+    top: 8px;
+}
+
+.right-ear--outer {
+    position: absolute;
+    background: white;
+    border-radius: 90%;
+    width: 20px;
+    height: 50px;
+    right: 10px; 
+}
+
+.right-ear--inner {
+    position: absolute;
+    background: pink;
+    border-radius: 90%;
+    width: 10px;
+    height: 50px;
+    right: 15px; 
+    top: 8px;
+}
+
+.head {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    height: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 30px;
+    width: 100%;
+}
+
+.head__eye {
+    background: gray;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 15px;
+    
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% {
+        height: 4px;
+    }
+
+    5% {
+        transform: translateX(0px, 2px);
+        height: 1px;
+    }
+
+    10% {
+        transform: translateX(0px, 0px);
+        height: 4px;
+    }
+
+}
+
+.head__left {
+    left: 30px;
+}
+
+.head__right {
+    right: 30px;
+}
+
+/*Cuarta Parte: creacion del gradiente y detalles a las mesetas*/
+
+.top {
+    width: 100%;
+    height: 30px;
+    background: rgb(73, 156, 73);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.gradient {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(135deg, rgb(73, 156, 73)  25%, transparent 25%) -50px 0,
+        linear-gradient(-135deg, rgb(73, 156, 73)  25%, transparent 25%) -50px 0,
+        linear-gradient(45deg, rgb(184, 90, 35) 25%, transparent 25%),
+        linear-gradient(-45deg, rgb(184, 90, 35) 25%, transparent 25%);
+    background-size: 35px;
+}
+
+.botton {
+    width: 100%;
+    height: 200px;
+    background: rgb(184, 90, 35);
+}
+
+.bush-left {
+    background: green;
+    position: absolute;
+    height: 100px;
+    width: 60px;
+    left: 0;
+    bottom: 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.bush-middle {
+    background: green;
+    position: absolute;
+    height: 130px;
+    width: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.bush-right {
+    background: green;
+    position: absolute;
+    height: 100px;
+    width: 60px;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.cloud-high {
+    height: 90%;
+    width: 70px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    background: white;
+    
+}
+
+.cloud-mini {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    background: white;
+}
+
+.cloud-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.cloud-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+

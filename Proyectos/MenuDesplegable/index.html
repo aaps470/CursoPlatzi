@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Menu Desplegable</title>
+</head>
+<body>
+    <nav class="menu">
+        <section class="menu_container">
+            <h1 class="menu_logo">Andres Pacheco</h1>
+
+            <ul class="menu_links">
+                <li class="menu_item">
+                    <a href="#" class="menu_link">Home</a>
+                </li>
+    
+                <li class="menu_item menu_item-show">
+                    <a href="#" class="menu_link">About <img src="./img/arrow.svg" alt="" class="menu_arrow"></a>
+    
+                    <ul class="menu_nesting">
+                        <li class="menu_inside">
+                            <a href="" class="menu_link menu_link-inside">About 1</a>
+                        </li>
+                        <li class="menu_inside">
+                            <a href="" class="menu_link menu_link-inside">About 2</a>
+                        </li>
+                        <li class="menu_inside">
+                            <a href="" class="menu_link menu_link-inside">About 3</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu_item menu_item-show">
+                    <a href="#" class="menu_link">Projects <img src="./img/arrow.svg" alt="" class="menu_arrow"></a>
+    
+                    <ul class="menu_nesting">
+                        <li class="menu_inside">
+                            <a href="" class="menu_link menu_link-inside">Project 1</a>
+                        </li>
+                        <li class="menu_inside">
+                            <a href="" class="menu_link menu_link-inside">Projetc 2</a>
+                        </li>
+                        <li class="menu_inside">
+                            <a href="" class="menu_link menu_link-inside">Protect 3</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu_item">
+                    <a href="#" class="menu_link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="menu_hamburguer">
+                <img src="./img/menu.svg" alt="" class="menu_img">
+            </div>
+        </section>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+</html>

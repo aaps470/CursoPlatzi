@@ -1,0 +1,28 @@
+/*Funciones especiales
+
+minmax: ayuda a declarar el tamaño minimo y maximo para el ancho y alto de una celda, sin depender del contenido que tengamos en ella
+
+repeat : se usa cuando todas las columnas o filas tienen el msmo ancho y evitar repetir el tamaño de las columnas*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: minmax(30px, 300px) 200px minmax(60px, 250px);
+    grid-template-rows: repeat(3, auto);
+    background-color: #fff1ff;
+    border: 5px solid #e1bee7;
+}
+
+.item{
+    border: 5px solid #00bcd4;
+    font-size: 2rem;
+}

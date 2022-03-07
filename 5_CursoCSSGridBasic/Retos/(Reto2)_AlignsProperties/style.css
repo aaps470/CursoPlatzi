@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    display: grid;
+    width: 325px;
+    height: 325px;
+    grid-template-columns: 150px 150px;
+    grid-auto-rows: 150px;
+    gap: 25px;
+    background-color: green;
+    
+}
+
+.item{
+    display: grid;
+    background-color: greenyellow;
+    font-size: 4rem;
+    
+}
+
+.item p{
+    justify-self: end;
+    align-self: end;
+    height: 50px;
+    width: 50px;
+    background-color: lightgreen;
+}
+

@@ -1,0 +1,24 @@
+/*Primero una pagina recomendada: Cubic-bezier.com
+
+Transform es basicamente transformar el elemento al que se le aplique este CSS sirve para moverse en su propio eje o moverlo de su sitio a otro
+
+ccomo en este casi que aplicando :hover y poniendo el cursor encima del objeto este se mueve por la funcion transform: translate*/
+
+.shadow {
+    background: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to bottom, #1e377f, #483fa1, #7941be, #b038d4, #eb12e2);;
+    border-radius: 50%;
+}
+
+.circle:hover {
+    transform: translate(30px, -30px);
+}

@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: 30vh 30vh 30vh;
+    grid-template-areas: 'algo1 algo2 algo2'
+                         'algo3 algo3 algo4'
+                         'algo5 algo6 algo7';
+    gap: 10px;
+}
+
+.item{
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+.item-1{
+    background-color: lightblue;
+    grid-area: algo1;
+}
+
+.item-2{
+    background-color: blue;
+    grid-area: algo2;
+}
+
+.item-3{
+    background-color: darkblue;
+    grid-area: algo3;
+}
+
+.item-4{
+    background-color: lightblue;
+    grid-area: algo4;
+}
+
+.item-5{
+    background-color: lightblue;
+    grid-area: algo5;
+}
+
+.item-6{
+    background-color: blue;
+    grid-area: algo6;
+}
+
+.item-7{
+    background-color: darkblue;
+    grid-area: algo7;
+}

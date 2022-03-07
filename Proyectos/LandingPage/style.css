@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 62.5%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.hero {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-areas: 
+    "nav"
+    "content";
+    color: #fff;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    min-height: 100vh;
+}
+
+.nav {
+    display: grid;
+    grid-area: nav;
+    justify-content: space-between;
+    grid-auto-flow: column;
+    gap: 1em;
+    align-items: center;
+    height: 90px;
+}
+
+.nav__list {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+}
+
+.nav__link{
+    color: #fff;
+    text-decoration: none;
+}
+.nav__logo {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.nav__menu {
+    display: none;
+}
+
+.nav__icon {
+    width: 30px;
+}
+
+/*hero main*/
+
+.hero__main{
+    display: grid;
+    gap: 2em;
+    grid-area: content;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 180px;
+    align-items: center;
+
+}
+
+.hero__waves {
+    grid-area: content;
+    align-self: end;
+}
+
+.hero__title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.hero__subtitle {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.hero__cta {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 60px;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    transition: background-color .3s;
+}
+
+.hero__cta:hover {
+    background-color: #fff;
+    color: #1e3c72;
+}
+
+.hero__img {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .nav__list {
+        display: none;
+    }
+
+    .nav__menu {
+        display: block;
+    }
+
+    .hero__main {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        text-align: center;
+    }
+
+    .hero__picture {
+        grid-row: 1/2;
+    }
+
+    .hero__img {
+        width: 500px;
+        display: block;
+        margin: 0 auto;
+    }
+}
