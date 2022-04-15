@@ -1,0 +1,30 @@
+Este archivo lo tengo como guia para futuros proyectos con TypeScript:
+
+Paso 1:
+Crear el archivo .gitignore e ir a gitignore.io donde configuraremos los archivos que no queremos que vayan a nuestro repositorio git. en este caso Windows y Node.
+
+Paso 2:
+Crear un archivo de configuracion para trabajar con una configuracion preestablecida, en este caso esta en el .editorconfig
+
+Paso 3:
+inicializamos un proyecto node, y se empieza con un npm. ponemos en la terminal en la carpeta del proyecto npm init -y
+
+Paso 4:
+instalar node de forma local (Esto es importante porque asi no esta por defecto en la pc) y lo hacemos con npm i typescript --save-dev en la terminal.
+
+Paso 5:
+Creamos nuestro tsconfig escribiendo en la terminal npx tsc --init
+
+Paso 6:
+Modificar de manera manual nuestro tsconfig, vamos hacia outDir, lo descomentamos  y poemos ./dist
+
+Paso 7:
+Crear una capeta src donde llevaremos los archivos tsc, creamos un demo.ts para iniciar el proceso. Vamos a la terminal ponemos npx tsc para asi ya empezar a codear.
+
+(Recordatorio para todos los proyectos TS: poner el tsc --watch en la terminal de VSCode para que se vaya actualizando tu archivo TS a JS)
+
+
+DATO NUEVO DE ESTE CURSO:
+
+hay una forma de coopilar los archivos TS, no tendremos que ir siempre a los archivos JS para coompilar usando npx ts-node src/whatever
+

@@ -1,0 +1,20 @@
+{
+  "name": "23_tiposavanzadostypescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Andres Pacheco <aaps470@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^6.1.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@capacitor/camera": "^1.3.1"
+  }
+}
