@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de clases</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Fotos de gatos</h1>
+    </div>
+
+    <span id="error"></span>    
+
+    <section id="randomMichis" class="randomMichis">
+        
+        <h2>Gatitos Aleatorios</h2>
+
+        <input type="button" value="Other Cat!" onclick="loadRandomMichis()">
+        <div class="michisContainer">
+            <article class="michis">
+                <img id= "img1" alt="Foto de gatito random">
+                <button id="btn1">
+                    Guardar micho en favoritos
+                </button>
+            </article>
+            <article class="michis">
+                <img id= "img2" alt="Foto de gatito random">
+                <button id="btn2">
+                    Guardar micho en favoritos
+                </button>
+            </article>
+        </div>  
+    </section>
+
+    <!--PASO 1:-->
+    <section id="uplodingMichi">
+        <h2>Sube la foto de tu Michi</h2>
+
+        <form id="uploadingForm">
+            <input id="file" type="file" name="file">
+            <button type="button" onclick="uploadMichiPhoto">Subir foto de micho</button>
+        </form>
+    </section>
+    
+    <section id="favoriteMichis" class="favoriteMichis">
+        <article class="michis">
+            <img id= "img2" alt="Foto de gatito random">
+            <button>Sacar al michi de favoritos</button>
+    </section>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
