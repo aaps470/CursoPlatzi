@@ -1,0 +1,29 @@
+body {
+    margin: 0 auto;
+}
+
+.container {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-areas: "nav     nav"
+                         "section aside"
+                         "footer footer";
+}
+
+.navbar {
+    
+}
+
+.navbar__content {
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.navbar__content ul {
+    gap: 20px;
+}
+
+.navbar__content ul li a {
+    font-size: 20px;
+    font-weight: 700;
+}
